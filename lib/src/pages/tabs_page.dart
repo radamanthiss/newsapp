@@ -41,7 +41,7 @@ class _Pages extends StatelessWidget {
     final navigationModel = Provider.of<_NavigationModel>(context);
     return PageView(
       controller: navigationModel.pageController,
-      //physics: BouncingScrollPhysics(),
+      
       physics: NeverScrollableScrollPhysics(),
       children: <Widget>[
         Container(
